@@ -27,6 +27,20 @@ LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_USE_AAPT2 := true
 
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
+ifeq ($(shell test $(TARGET_SCREEN_WIDTH) -gt 1080; echo $$?),0)
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res_1440p/common
+ifeq ($(PRODUCT_SIZE), mini)
+LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res_1440p/small
+else
+LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res_1440p/full
+endif
+else
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res_1080p/common
+ifeq ($(PRODUCT_SIZE), mini)
+LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res_1080p/small
+else
+LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res_1080p/full
+endif
+endif
 
 include $(BUILD_PACKAGE)
