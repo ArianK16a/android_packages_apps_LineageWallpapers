@@ -20,8 +20,7 @@
     android:versionName="1.0">
 
     <application
-        android:label="@string/wallpapers_app_name"
-        android:persistend="true">
+        android:label="Wallpapers">
 
         <receiver android:name=".PartnerWallpapers">
             <intent-filter>
