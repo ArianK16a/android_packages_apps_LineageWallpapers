@@ -16,18 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <array name="partner_wallpapers" translatable="false">
-      <item>ventana</item>
-      <item>seasidequarry</item>
-      <item>glassbearings</item>
-      <item>colorpass</item>
-      <item>fabrik</item>
-      <item>materialeye</item>
-      <item>thedeepblue</item>
-      <item>shelfhome</item>
-      <item>arc</item>
-      <item>harmony</item>
-      <item>headcase</item>
-      <item>iconoclast</item>
-      <item>slantstyle</item>
+      <item>abstract_orderofchaos</item>
+      <item>nature_ice</item>
+      <item>nature_nebula</item>
+      <item>nature_night</item>
+      <item>urban_dayroad</item>
     </array>
 </resources>
