@@ -16,5 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <array name="partner_wallpapers" translatable="false">
+        <item>abstract_orderofchaos</item>
+        <item>nature_ice</item>
+        <item>nature_nebula</item>
+        <item>nature_night</item>
+        <item>urban_dayroad</item>
     </array>
 </resources>
